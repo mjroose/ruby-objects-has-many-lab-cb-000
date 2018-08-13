@@ -24,4 +24,5 @@ class Author
       number_of_posts += author.posts.length
     end
     number_of_posts
+  end
 end
