@@ -17,4 +17,11 @@ class Author
     post = Post.new(title)
     add_post(post)
   end
+
+  def post_count
+    number_of_posts = 0
+    @@authors.each do |author|
+      number_of_posts += author.posts.length
+    end
+    number_of_posts
 end
