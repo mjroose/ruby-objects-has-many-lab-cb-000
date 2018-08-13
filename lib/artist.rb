@@ -21,10 +21,10 @@ class Artist
   end
 
   def self.song_count
-    all_songs = @@artists.collect do |artist|
-      artist.songs.length
+    number_of_songs = 0
+    all_songs = @@artists.each do |artist|
+      number_of_songs += artist.songs.length
     end
-    binding.pry
-    all_songs.sum
+    number_of_songs
   end
 end
