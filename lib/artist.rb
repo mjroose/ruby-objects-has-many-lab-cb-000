@@ -18,7 +18,7 @@ class Artist
     add_song(song)
   end
 
-  def self.song_count
-    nil
+  def self.song_count(artist)
+    artist.songs.length
   end
 end
