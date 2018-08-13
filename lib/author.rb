@@ -7,4 +7,5 @@ class Author
     @@authors << self
   end
 
+
 end
