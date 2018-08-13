@@ -1,3 +1,5 @@
+require 'pry'
+
 class Artist
   attr_accessor :name, :songs
   @@artists = []
@@ -22,6 +24,7 @@ class Artist
     all_songs = @@artists.collect do |artist|
       artist.songs.length
     end
+    binding.pry
     all_songs.sum
   end
 end
