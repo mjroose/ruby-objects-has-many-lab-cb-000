@@ -19,8 +19,9 @@ class Artist
   end
 
   def self.song_count
-    @@artists.collect do |artist|
+    all_songs = @@artists.collect do |artist|
       artist.songs.length
-    end.sum
+    end
+    all_songs.sum
   end
 end
